@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import AvailableMeals from './AvailableMeals';
-import classes from './Meals.module.css';
+//import classes from './Meals.module.css';
 import MealsSummary from './MealsSummary';
 
 const Meals = (props) => {

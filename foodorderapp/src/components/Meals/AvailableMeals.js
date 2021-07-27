@@ -7,7 +7,7 @@ import DUMMYMEALS from './dummymeal';
 
 const AvailableMeals = (props) => {
     
-     const [isLoaded,setIsLoaded] = useState(false);
+     const [isLoading,setIsLoading] = useState(true);
      const [mealsList,setMealsList] = useState([]); 
        
 
@@ -34,7 +34,7 @@ const AvailableMeals = (props) => {
                     price={meal.price}    
                     />)); 
             };  
-      setIsLoaded(true);
+      setIsLoading(false);
           });
       }, []); // Pass empty array to only run once on mount. 
 
@@ -47,6 +47,12 @@ const AvailableMeals = (props) => {
         description={meal.description}
         price={meal.price}    
         />);  */
+
+        if(isLoading){
+          return <section className={classes.MealLoading}>
+              <p>Loading ...</p>
+          </section>
+        };
     
 
     
