@@ -1,0 +1,11 @@
+.messagebutton {
+    display: table-cell;
+    font: inherit;
+    cursor: pointer;
+    background-color: #edf3de;
+    border: 0px solid #39068a;
+    color: white;
+    padding: 0rem 0;
+    border-radius: 10px;
+    font-weight: bold;
+}

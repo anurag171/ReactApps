@@ -6,6 +6,8 @@ import CartItem from './CartItem';
 import axios from 'axios';
 import Checkout from './Checkout';
 import { waitFor } from '@testing-library/react';
+import Card from '../UI/Card';
+import Message from '../UI/Message';
 
 const Cart = props => {
     const [isCheckout, setIsCheckout] = useState(false);
@@ -111,12 +113,11 @@ const Cart = props => {
             </div>
             {isCheckout && <Checkout onConfirm={saveOrder} onCancel={props.onClose} />}
             {!isCheckout && modalActions}
-            {isOrderSuccess && <p className={classes.ordersuccess}>Order success!!</p>}
+            {isOrderSuccess && <Message message='Order successfull !!!' decoration={classes.ordersuccess}/>}
             {isOrderSuccess &&
             <button className={classes.closebutton} onClick={props.onClose}>Close</button>}
-            {isOrderFailed && <p className={classes.orderfailed}>Order unsuccessful. Please try after some time!!</p>}
-            {isOrderFailed &&
-            <button className={classes.closebutton} onClick={props.onClose}>Close</button>}
+            {isOrderFailed && <Message message='Order unsuccessful. Please try after some time!!' decoration={classes.orderfailed}/>}
+            {isOrderFailed && <button className={classes.closebutton} onClick={props.onClose}>Close</button>}
         </Modal>
     );
 };
