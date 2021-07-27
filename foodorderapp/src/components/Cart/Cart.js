@@ -5,8 +5,6 @@ import CartContext from '../../store/cart-context';
 import CartItem from './CartItem';
 import axios from 'axios';
 import Checkout from './Checkout';
-import { waitFor } from '@testing-library/react';
-import Card from '../UI/Card';
 import Message from '../UI/Message';
 
 const Cart = props => {
