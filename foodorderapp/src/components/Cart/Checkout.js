@@ -3,7 +3,7 @@ import { useRef,useState } from 'react';
 
 const isEmpty = value => value != null && value.trim().length !== 0;
 const isFiveChars = value => value.trim().length===5;
-const isTenChars = value => value.trim().length===10;
+const isTenChars = value => value.trim().length>=10;
 const isEmail =  value => value.includes("@") && value.trim().includes(".") && value.trim().indexOf("@")<value.trim().indexOf(".");
 
 const Checkout = (props) => {
