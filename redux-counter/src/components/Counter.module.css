@@ -1,0 +1,50 @@
+.counter {
+    margin: 5rem auto;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    width: 40rem;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f0fa;
+}
+
+.counter h1 {
+    text-transform: uppercase;
+    color: #575757;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.counter button {
+    margin: 1rem;
+    display: inline-flex;
+}
+
+.counter input {
+    font: inherit;
+    border: 1px solid slateblue;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    width: 5rem;
+    max-width: 100%;
+    color: black;
+    margin: 1rem;
+    display: block;
+}
+
+.counter label {
+    color: #f4f0fa;
+    border: .5px solid slateblue;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3c0080;
+    font-style: inherit;
+    width: 10rem;
+    display: block;
+}
+
+.value {
+    font-size: 2rem;
+    color: #3c0080;
+    margin: 2rem 0;
+    font-weight: bold;
+}
